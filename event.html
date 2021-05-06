@@ -2,34 +2,97 @@
 
 <html lang="en">
     <head>
-        <link href="styles.css" rel="stylesheet">
+        <link href="event.css" rel="stylesheet">
         <title>anniezhou</title>
-        <style>
-            body{
-                background-color: grey;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class="center">
-        <h1>Event Photos</h1>
-        <img src="https://www.kaiyuan.info/data/attachment/forum/201805/01/100543jmppw8mdzk145m5m.jpeg">
-        <p>Galeries Lafayette Representative's speech at Promotion Conference</p>
+    <body>
+        <h1>My Activities</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://www.kaiyuan.info/data/attachment/forum/201805/01/100543jmppw8mdzk145m5m.jpeg" style="width:60%">
+                <div class="text">Presentation at Galeries Lafayette's Promotion Conference</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/49717444_10215685347141642_4541670500950081536_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nRnkhBguxa4AX-1vsSI&_nc_oc=AQn1hWqxYgylfVZkMSDmYvlhafT2FA1wfWVqe11Ufhw1ouolsqvwWEzdL-gHOP0xWEFwbqhZ_ILa3OYFYzrnHkmS&_nc_ht=scontent-ber1-1.xx&oh=46bc08e66aee6e0ed2539ab45593d978&oe=60B8C809" style="width:60%">
+                <div class="text">Workshop in Paris</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/60354064_10216548997532362_7168108483525476352_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=_GALY0X5lq4AX-a3oIq&_nc_ht=scontent-ber1-1.xx&oh=5864344c322a9b741edfd878807a2ca0&oe=60B7D6BD" style="width:60%">
+                <div class="text">Asia-Pacific Week Berlin 2019</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/62456277_10216779030603045_3463347385659293696_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=cBq9gReMibQAX8J24v5&_nc_ht=scontent-ber1-1.xx&oh=ef0a2b8e0aae154508c9f1d22aade44c&oe=60B6914E" style="width:60%">
+                <div class="text">MICE China Expo Beijing & Shanghai</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/69585028_10217395153005720_7521562555156791296_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=aRFhsw4J3IAAX-FBhoO&_nc_ht=scontent-ber1-1.xx&oh=68852d4a5989f07cfebeb8c47ab3423d&oe=60B889B5" style="width:60%">
+                <div class="text">IFA Berlin 2019</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/79925884_10218259866903027_1112856778359439360_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=XlOVaLNOk-YAX9ZbwYm&_nc_ht=scontent-ber1-1.xx&oh=ee85874b5194724742d0667433407ae2&oe=60B7FACB" style="width:50%">
+                <div class="text">Received the Award from my client</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
         <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/47490313_10215422091080405_2881676107881381888_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=gQeRDf6AjvkAX_8FJnJ&_nc_ht=scontent-ber1-1.xx&oh=b20a7e51f3df5b7a24173a412e9dc4d0&oe=60B55F1D">
-        <p>VisitBerlin Regular Table for discussion over the travel market</p>
-        <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/49717444_10215685347141642_4541670500950081536_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=nRnkhBguxa4AX-1vsSI&_nc_oc=AQn1hWqxYgylfVZkMSDmYvlhafT2FA1wfWVqe11Ufhw1ouolsqvwWEzdL-gHOP0xWEFwbqhZ_ILa3OYFYzrnHkmS&_nc_ht=scontent-ber1-1.xx&oh=46bc08e66aee6e0ed2539ab45593d978&oe=60B8C809">
-        <p>Workshop in Paris</p>
-        <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/60354064_10216548997532362_7168108483525476352_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=_GALY0X5lq4AX-a3oIq&_nc_ht=scontent-ber1-1.xx&oh=5864344c322a9b741edfd878807a2ca0&oe=60B7D6BD">
-        <p>Asia-Pacific Week Berlin 2019</p>
-        <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/62456277_10216779030603045_3463347385659293696_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=cBq9gReMibQAX8J24v5&_nc_ht=scontent-ber1-1.xx&oh=ef0a2b8e0aae154508c9f1d22aade44c&oe=60B6914E">
-        <p>MICE China Expo Beijing & Shanghai</p>
-        <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/69585028_10217395153005720_7521562555156791296_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=aRFhsw4J3IAAX-FBhoO&_nc_ht=scontent-ber1-1.xx&oh=68852d4a5989f07cfebeb8c47ab3423d&oe=60B889B5">
-        <p>IFA Berlin 2019</p>
-        <p></p>
-        <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.6435-9/79925884_10218259866903027_1112856778359439360_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=XlOVaLNOk-YAX9ZbwYm&_nc_ht=scontent-ber1-1.xx&oh=ee85874b5194724742d0667433407ae2&oe=60B7FACB">
-        <p>Received the award from my client</p>
     </body>
+    <footer>
+        <form>
+            <input type="button" value="Go back!" onclick="history.back()">
+        </form>
+    </footer>
+</html>
