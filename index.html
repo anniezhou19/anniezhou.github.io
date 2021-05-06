@@ -10,8 +10,19 @@
         <title>anniezhou</title>
     </head>
     <body>
-        <div class="jumbotron">
+        <div>
             <h1 class="center">Annie Zhou</h1>
+            <p>
+                <div id="google_translate_element" style="text-align:right;"></div>
+
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </p>
             <hr>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -22,7 +33,7 @@
                     <li><a href="hobby.html">Hobby</a></li>
                     <li>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-toggle="dropdown">Project</button>
+                            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">Project</button>
                             <ul class="dropdown-menu">
                                 <a class="dropdown-item" href="https://weibo.com/galerieslafayettede?is_all=1">Set up Lafayette Berlin Weibo</a>
                                 <a class="dropdown-item" href="event.html">Event Photos</a>
@@ -37,9 +48,9 @@
         <div id="main">
             <table>
                 <tr>
-                    <td><img src="annie.jpg" width="614" height="439"></td>
+                    <td><img src="annie.jpg" width="819" height="585"></td>
                     <td class="text">
-                        <h1>About Me</h1>
+                        <h1 class="center">About Me</h1>
                         <p>Hi My name is Annie Zhou, I am a Chinese who live in Europe for more than 20 years. I have an MBA degree with many years' experience in sales, marketing and project management.</p>
                         <p>As an experienced Key Account Manager with a demonstrated history of working in the customer services industry, I am skilled in Negotiation, Marketing and Business Analytics, Multi-Cultural Management.</p>
                         <p>I start learning Computer Science since January 2021, and I find myself very passionate and motivated about coding.</p>
@@ -54,4 +65,9 @@
             </table>
         </div>
     </body>
+    <footer class="center">
+        <div>
+            <a href="mailto:zhouannie@hotmail.com">Send Email</a>
+        </div>
+    </footer>
 </html>
