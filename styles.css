@@ -10,7 +10,8 @@ body{
 }
 p{
   font-size: 25px;
-  margin-up: 80px;
+  color: black;
+  margin-up: 100px;
   margin-right: 80px;
   margin-left: 30px;
 }
