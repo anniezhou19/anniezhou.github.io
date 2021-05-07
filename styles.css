@@ -31,7 +31,8 @@ p{
 }
 
 .text{
-    text-align: justify;
+    text-align: center;
+    text-justify: inter-word;
     margin-up: 100px;
     color: black;
 }
