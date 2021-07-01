@@ -2,38 +2,14 @@
 
 <html lang="en">
     <head>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
         <link href="styles.css" rel="stylesheet" />
         <script src="homepage.js"></script>
         <title>game</title>
     </head>
     <body id="ColDiv">
-        <h1>Try to Play</h1>
-        <h2>Choose a background color</h2>
-        <div>
-            <button class="jQButton">Pink</button>
-            <button class="jQButton">Blue</button>
-            <button class="jQButton">Green</button>
-            <button class="jQButton">Grey</button>
-            <button class="jQButton">Orange</button>
-        </div>
-        <hr>
-        <h2>How do you know about me?</h2>
-        <h3>1. Which language I don't speak</h3>
-        <p id="question"></p>
-        <button id="a1">French</button>
-        <button id="a2">English</button>
-        <button id="a3">Chinese</button>
-        <button id="a4">Italian</button>
-        <button id="a5">German</button>
-        <h3>2. Guess what I don't like?</h3>
-        <p id="question2"></p>
-        <button id="a6">Reading</button>
-        <button id="a7">Karaok</button>
-        <button id="a8">Electronic Games</button>
-        <button id="a9">Coding</button>
-        <button id="a10">Cooking</button>
-        <p></p>
+
         <div>
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             <p>
@@ -43,10 +19,56 @@
                 </form>
             </p>
         </div>
+        <p></p>
+
+        <h1>Try to Play</h1>
+        <h2>Choose a background color</h2>
+        <div>
+            <button class="jQButton">Pink</button>
+            <button class="jQButton">Blue</button>
+            <button class="jQButton">Green</button>
+            <button class="jQButton">Grey</button>
+            <button class="jQButton">Violet</button>
+        </div>
+        <p></p>
+        <h2>CS50 Quiz</h2>
+        <p></p>
+        <div>
+            <form id="question">
+                <p id="q1">What are the steps for compling source code into machine code?</p>
+                <input type="radio" name="answer" id="a1" value="Preprocessing, compiling, assembling, linking">Preprocessing, compiling, assembling, linking<br>
+                <input type="radio" name="answer" id="a2" value="Writing, compiling, debugging, testing">Writing, compiling, debugging, testing<br>
+                <input type="radio" name="answer" id="a3" value="Processing, creating, asserting, clang">Processing, creating, asserting, clang<br>
+                <input type="radio" name="answer" id="a4" value="Make">Make<br>
+                <p id="q2">What is the runtime of binary search?</p>
+                <input type="radio" name="answer" id="a5" value="O(1)">O(1)<br>
+                <input type="radio" name="answer" id="a6" value="O(logn)">O(logn)<br>
+                <input type="radio" name="answer" id="a7" value="O(n)">O(n)<br>
+                <input type="radio" name="answer" id="a8" value="O(n²)">O(n²)<br>
+                <p id="q3">Every time you malloc memory, you should also be sure to?</p>
+                <input type="radio" name="answer" id="a9" value="realloc">realloc<br>
+                <input type="radio" name="answer" id="a10" value="return">return<br>
+                <input type="radio" name="answer" id="a11" value="free">free<br>
+                <input type="radio" name="answer" id="a12" value="exit">exit<br>
+                <p id="q4">What is a race condition?</p>
+                <input type="radio" name="answer" id="a13" value="When conditions outside are nice for racing">When conditions outside are nice for racing<br>
+                <input type="radio" name="answer" id="a14" value="When two things happen at the same time and produce an unexpect result">When two things happen at the same time and produce an unexpect result<br>
+                <input type="radio" name="answer" id="a15" value="When a line of code is executed too quickly">When a line of code is executed too quickly<br>
+                <input type="radio" name="answer" id="a16" value="When a line of code is executed too slow">When a line of code is executed too slow<br>
+            </form>
+
+        </div>
+
+        <p></p>
+
     </body>
     <footer>
-        <form>
-            <input type="button" value="Go back!" onclick="history.back()">
-        </form>
+        <div>
+            <a href="mailto:zhouannie@hotmail.com">Send Email</a>
+            </div>
+            <p></p>
+            <form>
+                <input type="button" value="Go back!" onclick="history.back()">
+            </form>
     </footer>
 </html>
